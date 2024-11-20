@@ -1,4 +1,9 @@
 {
   "welcome": "ברוכים הבאים",
-  "description": "דוגמת לתרגום"
+  "description": "דוגמת לתרגום",
+  "language": "שפה",
+  "Home": "דף הבית",
+  "Contact": "צור קשר",
+  "About Us": "אודותינו",
+  "Gallery": "גלריה"
 }

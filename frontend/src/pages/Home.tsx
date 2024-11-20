@@ -12,11 +12,11 @@ const Home = () => {
           <p className="text-center">{t('description')}</p>
         </div>
         <div className="flex flex-col md:flex-row">
-          <Button className="btn btn-outline btn-primary my-3 md:mx-3 hover:bg-transparent hover:text-white hover:border border-blue-600">
-            About
+          <Button className="btn btn-outline btn-primary my-3 md:mx-3 hover:bg-transparent hover:text-white hover:border border-blue-600 animate-bounce hover:animate-none">
+            {t('About Us')}
           </Button>
-          <Button className="btn btn-outline btn-primary my-3 md:mx-3 hover:bg-transparent hover:text-white hover:border border-blue-600">
-            Contact
+          <Button className="btn btn-outline btn-primary my-3 md:mx-3 hover:bg-transparent hover:text-white hover:border border-blue-600 animate-bounce  hover:animate-none">
+            {t('Contact')}
           </Button>
         </div>
       </div>

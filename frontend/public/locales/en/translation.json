@@ -1,4 +1,9 @@
 {
   "welcome": "Welcome to the app!",
-  "description": "This is an example of internationalization."
+  "description": "This is an example of internationalization.",
+  "language": "language",
+  "Home": "Home",
+  "Contact": "Contact",
+  "About Us": "About Us",
+  "Gallery": "Gallery"
 }

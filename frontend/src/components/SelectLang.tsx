@@ -11,6 +11,7 @@ import {
 } from './ui/dropdown-menu';
 import WorldFlag from 'react-world-flags';
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 function SelectLang() {
   // Read language from localStorage on component mount
@@ -28,17 +29,18 @@ function SelectLang() {
     localStorage.setItem('language', lang); // Save language to localStorage
     document.documentElement.dir = lang === 'he' ? 'rtl' : 'ltr';
   };
-
+  const { t } = useTranslation();
   return (
     <div className="max-w[80px]">
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
-          <Button className="p-1">
+          <Button className="p-1 mr-1">
             <Globe
               // code="IL" // Default flag (use a default language if necessary)
               className="mx-auto"
               style={{ width: 30, height: 24 }}
             />
+            <span className="mr-2">{t('language')}</span>
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent className="w-40 mt-1">
