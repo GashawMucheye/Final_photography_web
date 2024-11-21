@@ -9,7 +9,7 @@ type ReactNode = {
 const Layout = ({ children }: ReactNode) => {
   return (
     <div className="p-0 m-0 overflow-hidden">
-      <header className="fixed top-0 z-50 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 py-2 w-full">
+      <header className="fixed top-0 z-50 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 py-[2px] md:py-2 w-full">
         <Navbar />
       </header>
       <main className="min-h-screen bg-red">{children}</main>

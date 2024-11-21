@@ -1,9 +1,12 @@
 {
-  "welcome": "Welcome to the app!",
-  "description": "This is an example of internationalization.",
+  "homePage": {
+    "description": "This is an example of internationalization.",
+    "welcome": "Welcome to the app!"
+  },
   "language": "language",
   "Home": "Home",
   "Contact": "Contact",
   "About Us": "About Us",
-  "Gallery": "Gallery"
+  "Gallery": "Gallery",
+  "copyRighter": "All rights reserved to Eyal Photographer, 2024"
 }

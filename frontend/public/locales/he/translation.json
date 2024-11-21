@@ -1,9 +1,12 @@
 {
-  "welcome": "ברוכים הבאים",
-  "description": "דוגמת לתרגום",
+  "homePage": {
+    "description": "דוגמת לתרגום",
+    "welcome": "ברוכים הבאים"
+  },
   "language": "שפה",
   "Home": "דף הבית",
   "Contact": "צור קשר",
   "About Us": "אודותינו",
-  "Gallery": "גלריה"
+  "Gallery": "גלריה",
+  "copyRighter": "כל הזכויות שמורות לאייל צלם, 2024"
 }
