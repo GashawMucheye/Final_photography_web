@@ -2,7 +2,6 @@ import i18n from 'i18next';
 import HttpBackend from 'i18next-http-backend';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import { initReactI18next } from 'react-i18next';
-
 i18n
   .use(HttpBackend) // Using the HttpBackend to load translations
   .use(LanguageDetector) // Detects the user's language preference
@@ -16,6 +15,7 @@ i18n
     interpolation: {
       escapeValue: false, // React already handles escaping to prevent XSS
     },
+
     backend: {
       // Configuring the path to load the translation files
       loadPath: '/locales/{{lng}}/{{ns}}.json',

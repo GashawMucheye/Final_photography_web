@@ -16,17 +16,17 @@ const ListMenu = ({ className }: { className: string }) => {
     },
     {
       id: 2,
-      endPoint: `/${t('navigation.Contact')}`,
+      endPoint: '/contact',
       linkName: t('navigation.Contact us'), // Translate "Contact"
     },
     {
       id: 3,
-      endPoint: `/${t('navigation.About')}`,
+      endPoint: '/about',
       linkName: t('navigation.About us'), // Translate "About Us"
     },
     {
       id: 4,
-      endPoint: `/${t('navigation.Gallery')}`,
+      endPoint: '/gallery',
       linkName: t('navigation.Gallery'), // Translate "Gallery"
     },
   ];
@@ -37,7 +37,7 @@ const ListMenu = ({ className }: { className: string }) => {
         <NavLink
           key={link.id}
           // to={link.endPoint.trim()}
-          to={`${link.endPoint.replace(/\s+/g, '-').toLowerCase()}`}
+          to={link.endPoint}
           // className="hover:text-blue-700 transition-shadow mt-2 md:mt-1 tracking-widest"
           className={({ isActive }) =>
             isActive

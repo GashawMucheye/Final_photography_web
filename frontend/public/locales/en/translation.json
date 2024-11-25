@@ -8,13 +8,19 @@
     "Home": "Home",
     "Contact": "Contact",
     "Contact us": "Contact",
-
     "About": "About-us",
     "About us": "About Us",
     "Gallery": "Gallery",
     "English": "English",
     "Amharic": "Amharic",
     "Hebrew": "Hebrew"
+  },
+  "aboutSection": {
+    "aboutTitle": "About Me",
+    "aboutDescription1": "With over 10 years of experience in the photography industry, I specialize in capturing the essence of your most memorable moments. From beautiful weddings to joyful Bar Mitzvah celebrations, my goal is to create timeless images that you will cherish forever.",
+    "aboutDescription2": "My passion for photography goes beyond just taking pictures; I strive to provide excellent service, ensuring that each client feels comfortable and satisfied with the final results. Let me help you tell your story through my lens.",
+    "aboutDescription3": "Whether it's a grand event or an intimate gathering, I am dedicated to delivering exceptional quality and creativity in every shot.",
+    "aboutImageAlt": "Photographer at work"
   },
   "copyRighter": "All Rights Reserved to Eyal, 2024"
 }
