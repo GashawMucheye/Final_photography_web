@@ -3,10 +3,17 @@
     "description": "ይህ ምሳሌ እንደ አለም አቀፍ ቋንቋ ማስተካከያ ነው።",
     "welcome": "እንኳን ወደ መተግበሪያ በሰላም መጡ!"
   },
-  "language": "ቋንቋ",
-  "Home": "መነሻ",
-  "Contact": "አግኙን",
-  "About Us": "ስለ እኛ",
-  "Gallery": "ገለሪ",
-  "copyRighter": "ሁሉም መብቶች ለኢያል ፎቶግራፊ, 2024"
+  "navigation": {
+    "language": "ቋንቋ",
+    "Home": "መነሻ",
+    "Contact": "አግኙን",
+    "Contact us": "አግኙን",
+    "About": "ስለ-እኛ",
+    "About us": "ስለ እኛ",
+    "Gallery": "ገለሪ",
+    "English": "እንግሊዝኛ",
+    "Amharic": "አማርኛ",
+    "Hebrew": "እብራይስጥ"
+  },
+  "copyRighter": "ሁሉም መብቶች ለኢያል, 2024"
 }

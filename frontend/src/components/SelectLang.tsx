@@ -40,7 +40,7 @@ function SelectLang() {
               className="mx-auto"
               style={{ width: 30, height: 24 }}
             />
-            <span className="mr-2">{t('language')}</span>
+            <span className="mr-2 p-1">{t('navigation.language')}</span>
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent className="w-40 mt-1">
@@ -52,7 +52,7 @@ function SelectLang() {
                 className="mr-2"
                 style={{ width: 20, height: 20 }}
               />
-              <span>English</span>
+              <span>{t('navigation.English')}</span>
             </DropdownMenuItem>
             <DropdownMenuItem onClick={() => handleLanguageChange('am')}>
               <WorldFlag
@@ -60,7 +60,7 @@ function SelectLang() {
                 className="mr-2"
                 style={{ width: 20, height: 20 }}
               />
-              <span>Amharic</span>
+              <span>{t('navigation.Amharic')}</span>
             </DropdownMenuItem>
             <DropdownMenuItem onClick={() => handleLanguageChange('he')}>
               <WorldFlag
@@ -68,7 +68,7 @@ function SelectLang() {
                 className="mr-2"
                 style={{ width: 20, height: 20 }}
               />
-              <span>Hebrew</span>
+              <span>{t('navigation.Hebrew')}</span>
             </DropdownMenuItem>
           </DropdownMenuGroup>
         </DropdownMenuContent>

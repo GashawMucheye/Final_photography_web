@@ -1,4 +1,4 @@
-import { FC, useState } from 'react';
+import { FC } from 'react';
 import ListMenu from './ListMenu';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { Button } from './ui/button';
@@ -6,8 +6,11 @@ import { Button } from './ui/button';
 import eyal from '/eyal_logo.jpg';
 import SelectLang from './SelectLang';
 import ModeToggle from './mode-toggle';
+import { useMyContext } from '@/context-Api/toggle-menu';
+
 const Navbar: FC = () => {
-  const [openMenu, setOpenMenu] = useState<boolean>(true);
+  // const [openMenu, setOpenMenu] = useState<boolean>(true);
+  const { openMenu, toggleMenu } = useMyContext();
 
   return (
     <nav className="container mx-auto flex flex-col md:flex-row justify-between text-gray-300 items-center px-4">
@@ -31,7 +34,8 @@ const Navbar: FC = () => {
         <ModeToggle />
         <SelectLang />
         <Button
-          onClick={() => setOpenMenu(!openMenu)}
+          // onClick={() => setOpenMenu(!openMenu)}
+          onClick={toggleMenu}
           className="block md:hidden"
         >
           {openMenu && <FaTimes size={24} />}

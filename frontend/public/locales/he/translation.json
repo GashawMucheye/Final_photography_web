@@ -3,10 +3,17 @@
     "description": "דוגמת לתרגום",
     "welcome": "ברוכים הבאים"
   },
-  "language": "שפה",
-  "Home": "דף הבית",
-  "Contact": "צור קשר",
-  "About Us": "אודותינו",
-  "Gallery": "גלריה",
-  "copyRighter": "כל הזכויות שמורות לאייל צלם, 2024"
+  "navigation": {
+    "language": "שפה",
+    "Home": "דף הבית",
+    "Contact": "צור-קשר",
+    "Contact us": "צור קשר",
+    "About": "אודותינו",
+    "About us": "אודותינו",
+    "Gallery": "גלריה",
+    "English": "אנגלית",
+    "Amharic": "אמהרית",
+    "Hebrew": "עברית"
+  },
+  "copyRighter": "כל הזכויות שמורות לאייל, 2024"
 }

@@ -3,10 +3,18 @@
     "description": "This is an example of internationalization.",
     "welcome": "Welcome to the app!"
   },
-  "language": "language",
-  "Home": "Home",
-  "Contact": "Contact",
-  "About Us": "About Us",
-  "Gallery": "Gallery",
-  "copyRighter": "All rights reserved to Eyal Photographer, 2024"
+  "navigation": {
+    "language": "language",
+    "Home": "Home",
+    "Contact": "Contact",
+    "Contact us": "Contact",
+
+    "About": "About-us",
+    "About us": "About Us",
+    "Gallery": "Gallery",
+    "English": "English",
+    "Amharic": "Amharic",
+    "Hebrew": "Hebrew"
+  },
+  "copyRighter": "All Rights Reserved to Eyal, 2024"
 }

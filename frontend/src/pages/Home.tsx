@@ -18,10 +18,10 @@ const Home = () => {
         </div>
         <div className="flex flex-col md:flex-row">
           <Button className="btn btn-outline btn-primary my-3 md:mx-3 hover:bg-transparent hover:text-white hover:border border-blue-600 animate-bounce hover:animate-none">
-            {t('About Us')}
+            {t('navigation.About')}
           </Button>
           <Button className="btn btn-outline btn-primary my-3 md:mx-3 hover:bg-transparent hover:text-white hover:border border-blue-600 animate-bounce  hover:animate-none">
-            {t('Contact')}
+            {t('navigation.Contact us')}
           </Button>
         </div>
       </div>
