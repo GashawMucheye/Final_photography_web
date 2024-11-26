@@ -22,5 +22,21 @@
     "aboutDescription3": "ምንግዜውም ትንሽ ተሰናብቶ ሆኖም አንዳንድ ጊዜ ከፍተኛ የሆነ ትግቢያን የምዋል እንደኔ እርቅና ስኬት የምረጣለን።",
     "aboutImageAlt": "ፎቶግራፍ በስራው ላይ"
   },
+  "contactSection": {
+    "yourName": "ስምዎ",
+    "yourEmail": "ኢሜይልዎ",
+    "yourMessage": "መልእክትዎ",
+    "submit": "አስገባ",
+    "contactUs": "ያግኙን",
+    "name": "ስም",
+    "email": "ኢሜይል",
+    "message": "መልእክት"
+  },
+  "gallerySection": {
+    "Gallery": "ገለሪ",
+    "BritMilah": "ግርዛት ሥነ-ስርዓት ",
+    "BarMitzvah": "ባር ሚፅቫህ",
+    "Wedding": "ሰርግ"
+  },
   "copyRighter": "ሁሉም መብቶች ለኢያል, 2024"
 }

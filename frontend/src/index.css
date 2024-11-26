@@ -121,6 +121,15 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* form-label */
+
+.form-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+/* scrollbar */
 ::-webkit-scrollbar {
   width: 15px;
 }

@@ -22,5 +22,21 @@
     "aboutDescription3": "בין אם מדובר באירוע גדול או במפגש אינטימי, אני מחויב לספק איכות יוצאת דופן ויצירתיות בכל תמונה.",
     "aboutImageAlt": "צלם בעבודה"
   },
+  "contactSection": {
+    "yourName": "השם שלך",
+    "yourEmail": "האימייל שלך",
+    "yourMessage": "ההודעה שלך",
+    "submit": "שלח",
+    "contactUs": "צור קשר",
+    "name": "שם",
+    "email": "אימייל",
+    "message": "הודעה"
+  },
+  "gallerySection": {
+    "Gallery": "גלריה",
+    "BritMilah": "ברית מילה",
+    "BarMitzvah": "בר מצווה",
+    "Wedding": "חתונה"
+  },
   "copyRighter": "כל הזכויות שמורות לאייל, 2024"
 }

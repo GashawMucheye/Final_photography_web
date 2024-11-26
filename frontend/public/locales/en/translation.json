@@ -22,5 +22,21 @@
     "aboutDescription3": "Whether it's a grand event or an intimate gathering, I am dedicated to delivering exceptional quality and creativity in every shot.",
     "aboutImageAlt": "Photographer at work"
   },
+  "contactSection": {
+    "yourName": "your name",
+    "yourEmail": "your email",
+    "yourMessage": "your message",
+    "submit": "submit",
+    "contactUs": "contact us",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message"
+  },
+  "gallerySection": {
+    "Gallery": "Gallery",
+    "BritMilah": "Brit Milah",
+    "BarMitzvah": "Bar Mitzvah",
+    "Wedding": "Wedding"
+  },
   "copyRighter": "All Rights Reserved to Eyal, 2024"
 }

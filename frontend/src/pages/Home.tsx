@@ -3,10 +3,12 @@ import { Button } from '../components/ui/button';
 import About from './About';
 import Gallery from './Gallery';
 import Contact from './Contact';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
   const { t } = useTranslation();
   const { welcome, description }: any = t('homePage');
+  const navigate = useNavigate();
   return (
     <section className="min-h-[800px]">
       <div
@@ -17,10 +19,20 @@ const Home = () => {
           <p className="text-center">{description}</p>
         </div>
         <div className="flex flex-col md:flex-row">
-          <Button className="btn btn-outline btn-primary my-3 md:mx-3 hover:bg-transparent hover:text-white hover:border border-blue-600 animate-bounce hover:animate-none">
+          <Button
+            className="btn btn-outline btn-primary my-3 md:mx-3 hover:bg-transparent hover:text-white hover:border border-blue-600 animate-bounce hover:animate-none"
+            onClick={() => {
+              navigate('/about');
+            }}
+          >
             {t('navigation.About')}
           </Button>
-          <Button className="btn btn-outline btn-primary my-3 md:mx-3 hover:bg-transparent hover:text-white hover:border border-blue-600 animate-bounce  hover:animate-none">
+          <Button
+            className="btn btn-outline btn-primary my-3 md:mx-3 hover:bg-transparent hover:text-white hover:border border-blue-600 animate-bounce  hover:animate-none"
+            onClick={() => {
+              navigate('/contact');
+            }}
+          >
             {t('navigation.Contact us')}
           </Button>
         </div>

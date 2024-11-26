@@ -7,6 +7,7 @@ import eyal from '/eyal_logo.jpg';
 import SelectLang from './SelectLang';
 import ModeToggle from './mode-toggle';
 import { useMyContext } from '@/context-Api/toggle-menu';
+import { Link } from 'react-router-dom';
 
 const Navbar: FC = () => {
   // const [openMenu, setOpenMenu] = useState<boolean>(true);
@@ -14,12 +15,17 @@ const Navbar: FC = () => {
 
   return (
     <nav className="container mx-auto flex flex-col md:flex-row justify-between text-gray-300 items-center px-4">
-      <img
-        src={eyal}
-        alt="eyal"
-        width={40}
+      <Link
+        to={'/'}
         className="cursor-pointer mr-auto md:mr-0 text-2xl font-bold hover:scale-180 rounded-full hover:bg-red-600"
-      />
+      >
+        <img
+          src={eyal}
+          alt="eyal"
+          width={40}
+          // className="cursor-pointer mr-auto md:mr-0 text-2xl font-bold hover:scale-180 rounded-full hover:bg-red-600"
+        />
+      </Link>
 
       {/* <ModeToggle /> */}
       <ListMenu className="hidden md:flex justify-center items-center gap-3 " />
