@@ -150,3 +150,17 @@
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(68, 144, 203);
 }
+/* accessibility */
+.high-contrast {
+  background-color: #000;
+  color: #fff;
+}
+
+.high-contrast a {
+  color: #00f;
+}
+
+.high-contrast button {
+  background-color: #fff;
+  color: #000;
+}

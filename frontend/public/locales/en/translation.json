@@ -1,7 +1,8 @@
 {
   "homePage": {
     "description": "This is an example of internationalization.",
-    "welcome": "Welcome to the app!"
+    "welcome": "Welcome to the app!",
+    "scroll": "scroll to top"
   },
   "navigation": {
     "language": "language",
@@ -39,6 +40,12 @@
     "BritMilah": "Brit Milah",
     "BarMitzvah": "Bar Mitzvah",
     "Wedding": "Wedding"
+  },
+  "accessibility": {
+    "fontIncrease": "Increase font size",
+    "fontDecrease": "Decrease font size",
+    "highContrast": "High Contrast",
+    "toggleOptions": "Toggle accessibility options"
   },
   "copyRighter": "All Rights Reserved to Eyal, 2024"
 }

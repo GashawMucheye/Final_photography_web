@@ -1,3 +1,4 @@
+import i18n from '@/i18n';
 import { FC } from 'react';
 import { useTranslation } from 'react-i18next';
 
@@ -15,7 +16,6 @@ const WhatsAppButton: FC = () => {
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-14 right-3 md:right-14 bg-green-500 hover:bg-green-600 rounded-full p-3 shadow-xl transition-all duration-300 ease-in-out z-50 mb-2"
-        title={t('contactSection.title')}
       >
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
