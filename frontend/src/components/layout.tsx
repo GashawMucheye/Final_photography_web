@@ -13,7 +13,7 @@ const Layout = ({ children }: ReactNode) => {
         <Navbar />
       </header>
       <main className="min-h-screen bg-red">{children}</main>
-      <footer className="bg-primary dark:bg-slate-600 p-2 fixed bottom-0 z-50 w-full text-white">
+      <footer className="bg-primary dark:bg-slate-600 p-2 fixed bottom-0 z-50 w-full text-white min-h-[20px]">
         <FooterComp />
       </footer>
     </div>

@@ -4,13 +4,13 @@ import About from './About';
 import Gallery from './Gallery';
 import Contact from './Contact';
 import { useNavigate } from 'react-router-dom';
-
+import WhatsAppButton from '@/components/WhatsAppButton';
 const Home = () => {
   const { t } = useTranslation();
   const { welcome, description }: any = t('homePage');
   const navigate = useNavigate();
   return (
-    <section className="min-h-[800px]">
+    <section className="min-h-screen">
       <div
         className={`bg-[url('./images/image.png')] bg-center md:bg-left-top  bg-cover min-h-[500px] md:min-h-[800px] md:mb-18  flex gap-3 flex-col items-center justify-center mt-[.5em] object-contain`}
       >
@@ -40,6 +40,7 @@ const Home = () => {
       <About />
       <Gallery />
       <Contact />
+      <WhatsAppButton />
     </section>
   );
 };

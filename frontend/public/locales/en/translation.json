@@ -30,9 +30,11 @@
     "contactUs": "contact us",
     "name": "Name",
     "email": "Email",
-    "message": "Message"
+    "message": "Message",
+    "title": "Click to chat with us on WhatsApp!"
   },
   "gallerySection": {
+    "All": "All",
     "Gallery": "Gallery",
     "BritMilah": "Brit Milah",
     "BarMitzvah": "Bar Mitzvah",

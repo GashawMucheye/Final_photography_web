@@ -46,29 +46,53 @@ function SelectLang() {
         <DropdownMenuContent className="w-40 mt-1">
           <DropdownMenuSeparator />
           <DropdownMenuGroup>
-            <DropdownMenuItem onClick={() => handleLanguageChange('en')}>
+            <DropdownMenuItem
+              onClick={() => handleLanguageChange('en')}
+              disabled={i18n.language === 'en'}
+              className={
+                i18n.language === 'en' ? 'opacity-5' : 'cursor-pointer'
+              }
+            >
               <WorldFlag
                 code="US"
                 className="mr-2"
                 style={{ width: 20, height: 20 }}
               />
-              <span>{t('navigation.English')}</span>
+              <span className="hover:text-blue-700">
+                {t('navigation.English')}
+              </span>
             </DropdownMenuItem>
-            <DropdownMenuItem onClick={() => handleLanguageChange('am')}>
+            <DropdownMenuItem
+              onClick={() => handleLanguageChange('am')}
+              disabled={i18n.language === 'am'}
+              className={
+                i18n.language === 'am' ? 'opacity-5' : 'cursor-pointer'
+              }
+            >
               <WorldFlag
                 code="ET"
                 className="mr-2"
                 style={{ width: 20, height: 20 }}
               />
-              <span>{t('navigation.Amharic')}</span>
+              <span className="hover:text-blue-700">
+                {t('navigation.Amharic')}
+              </span>
             </DropdownMenuItem>
-            <DropdownMenuItem onClick={() => handleLanguageChange('he')}>
+            <DropdownMenuItem
+              onClick={() => handleLanguageChange('he')}
+              disabled={i18n.language === 'he'}
+              className={
+                i18n.language === 'he' ? 'opacity-5' : 'cursor-pointer'
+              }
+            >
               <WorldFlag
                 code="IL"
                 className="mr-2"
                 style={{ width: 20, height: 20 }}
               />
-              <span>{t('navigation.Hebrew')}</span>
+              <span className="hover:text-blue-700">
+                {t('navigation.Hebrew')}
+              </span>
             </DropdownMenuItem>
           </DropdownMenuGroup>
         </DropdownMenuContent>

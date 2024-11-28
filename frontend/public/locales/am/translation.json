@@ -30,9 +30,11 @@
     "contactUs": "ያግኙን",
     "name": "ስም",
     "email": "ኢሜይል",
-    "message": "መልእክት"
+    "message": "መልእክት",
+    "title": "ይጫኑ በWhatsApp ከኛ ጋር ለማነጋገር!"
   },
   "gallerySection": {
+    "All": "ሙሉ ገለሪ",
     "Gallery": "ገለሪ",
     "BritMilah": "ግርዛት ሥነ-ስርዓት ",
     "BarMitzvah": "ባር ሚፅቫህ",

@@ -5,6 +5,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { MessageCircle, User } from 'lucide-react';
 import { MdEmail } from 'react-icons/md';
 import { useTranslation } from 'react-i18next';
+import WhatsAppButton from '@/components/WhatsAppButton';
 
 const Contact = () => {
   const { t } = useTranslation();
@@ -14,7 +15,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8 container mx-auto border border-red-700">
+    <div className="flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8 container mx-auto">
       <div className="max-w-2xl w-full shadow-lg rounded-lg p-6 sm:p-8">
         <h1 className="text-2xl font-bold text-center text-gray-800 mb-6 sm:text-3xl">
           {t('contactSection.contactUs')}
@@ -69,6 +70,7 @@ const Contact = () => {
             {t('contactSection.submit')}
           </Button>
         </form>
+        <WhatsAppButton />
       </div>
     </div>
   );

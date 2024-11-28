@@ -2,7 +2,6 @@ import { FC } from 'react';
 import ListMenu from './ListMenu';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { Button } from './ui/button';
-// import { Button } from './ui/button';
 import eyal from '/eyal_logo.jpg';
 import SelectLang from './SelectLang';
 import ModeToggle from './mode-toggle';
@@ -42,7 +41,7 @@ const Navbar: FC = () => {
         <Button
           // onClick={() => setOpenMenu(!openMenu)}
           onClick={toggleMenu}
-          className="block md:hidden"
+          className="block md:hidden "
         >
           {openMenu && <FaTimes size={24} />}
           {!openMenu && <FaBars size={24} />}

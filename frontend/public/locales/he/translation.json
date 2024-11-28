@@ -30,9 +30,11 @@
     "contactUs": "צור קשר",
     "name": "שם",
     "email": "אימייל",
-    "message": "הודעה"
+    "message": "הודעה",
+    "title": "לחץ כדי לשוחח איתנו ב-WhatsApp!"
   },
   "gallerySection": {
+    "All": "הכל",
     "Gallery": "גלריה",
     "BritMilah": "ברית מילה",
     "BarMitzvah": "בר מצווה",
