@@ -32,6 +32,9 @@
     "name": "שם",
     "email": "אימייל",
     "message": "הודעה",
+    "phone": "טלפון",
+    "messageSent": "ההודעה נשלחה",
+    "errorMessage": "ההודעה לא נשלחה",
     "title": "לחץ כדי לשוחח איתנו ב-WhatsApp!"
   },
   "gallerySection": {

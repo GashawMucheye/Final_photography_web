@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import Accessibility from '@/components/Accessibility';
+import i18n from '@/i18n';
+import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 interface Image {
   id: number;
@@ -57,17 +59,19 @@ const Gallery: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>(
     `${t('gallerySection.All')}`
   );
-
-  localStorage.setItem('stateGallery', selectedCategory);
-  let getAll = localStorage.getItem('stateGallery');
+  useEffect(() => {
+    // Update selected category on language change
+    setSelectedCategory(t('gallerySection.All'));
+  }, [i18n.language]);
 
   const filteredImages =
-    selectedCategory === `${t('gallerySection.All') || getAll}`
+    selectedCategory === `${t('gallerySection.All')}`
       ? images
       : images.filter((image) => image.category === selectedCategory);
 
   return (
     <div className="container mx-auto p-4 min-h-screen my-12">
+      <Accessibility />
       <h1 className="font-semibold text-center hover:animate-ping cursor-pointer underline">
         {t('gallerySection.Gallery')}
       </h1>

@@ -71,7 +71,14 @@ const Home = () => {
       <WhatsAppButton />
       <motion.a
         whileHover={{ scale: 1.2, color: 'steelblue', cursor: 'pointer' }}
-        className="fixed bottom-[70px] left-[10px] bg-blue-700 rounded-md animate-bounce  hover:opacity-15"
+        // className={`fixed bottom-[70px] left-[10px] bg-blue-700 rounded-md animate-bounce  hover:opacity-15 ${
+        //   i18n.language === 'he' ? 'bg-red-500' : ''
+        // }`}
+        className={`${
+          i18n.language === 'he'
+            ? 'bg-blue-700 fixed bottom-[70px] right-[8px] rounded-md animate-bounce  '
+            : 'fixed bottom-[75px] left-[8px] bg-blue-700 rounded-md animate-bounce '
+        }`}
       >
         {showArrow && (
           <div

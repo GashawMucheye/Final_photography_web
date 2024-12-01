@@ -1,4 +1,3 @@
-import i18n from '@/i18n';
 import { FC } from 'react';
 import { useTranslation } from 'react-i18next';
 
@@ -7,7 +6,7 @@ const WhatsAppButton: FC = () => {
   const message = 'Hello!%20I%20need%20help.'; // Customize the message
 
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <div className="mx-auto  overflow-hidden lg:flex lg:items-center my-10 container min-h-[250px]">
@@ -15,7 +14,13 @@ const WhatsAppButton: FC = () => {
         href={whatsappLink}
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-14 right-3 md:right-14 bg-green-500 hover:bg-green-600 rounded-full p-3 shadow-xl transition-all duration-300 ease-in-out z-50 mb-2"
+        title={t('contactSection.title')}
+        // className="fixed bottom-14 right-3 md:right-14 bg-green-500 hover:bg-green-600 rounded-full p-3 shadow-xl transition-all duration-300 ease-in-out z-50 mb-2"
+        className={`${
+          i18n.language === 'he'
+            ? 'fixed bottom-[150px] right-[0px] bg-green-500 hover:bg-green-600 rounded-full p-3 shadow-xl transition-all duration-300 ease-in-out z-50 mb-2'
+            : 'fixed bottom-[150px] left-[0px]  bg-green-500 hover:bg-green-600 rounded-full p-3 shadow-xl transition-all duration-300 ease-in-out z-50 mb-2 '
+        }`}
       >
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"

@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { FC, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Skeleton } from '@/components/ui/skeleton';
+import Accessibility from '@/components/Accessibility';
 const About: FC = () => {
   const { t } = useTranslation();
   const [isLoading, setIsLoading] = useState(true);
@@ -13,6 +14,7 @@ const About: FC = () => {
   // max-w-5xl
   return (
     <div className=" mx-auto rounded-md shadow-lg overflow-hidden lg:flex lg:items-center my-10 container min-h-screen">
+      <Accessibility />
       <div className="lg:w-1/2">
         {isLoading ? (
           <Skeleton className="w-full h-[300px] lg:h-[400px]" />

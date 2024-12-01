@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './Navbar';
 import FooterComp from './FooterComp';
-
+import 'react-toastify/dist/ReactToastify.css';
 type ReactNode = {
   children: React.ReactNode;
 };

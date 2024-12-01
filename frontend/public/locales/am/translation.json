@@ -32,6 +32,9 @@
     "name": "ስም",
     "email": "ኢሜይል",
     "message": "መልእክት",
+    "phone": "ስልክ",
+    "messageSent": "መልእክት ተልኳል",
+    "errorMessage": "መልእክት አልተላከም",
     "title": "ይጫኑ በWhatsApp ከኛ ጋር ለማነጋገር!"
   },
   "gallerySection": {

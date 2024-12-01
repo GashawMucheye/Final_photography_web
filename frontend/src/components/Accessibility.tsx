@@ -38,7 +38,7 @@ const Accessibility: FC = () => {
   }, [highContrast]);
 
   return (
-    <div className="fixed bottom-20 left-0 z-50">
+    <div className="fixed bottom-[25.5rem] left-0 z-50">
       {/* Wheelchair Icon to toggle options */}
       <button
         onClick={() => setShowOptions((prev) => !prev)}

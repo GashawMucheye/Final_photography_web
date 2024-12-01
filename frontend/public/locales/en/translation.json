@@ -32,6 +32,9 @@
     "name": "Name",
     "email": "Email",
     "message": "Message",
+    "phone": "phone",
+    "messageSent": "message sent",
+    "errorMessage": "message not sent",
     "title": "Click to chat with us on WhatsApp!"
   },
   "gallerySection": {
