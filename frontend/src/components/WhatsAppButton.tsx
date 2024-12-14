@@ -16,11 +16,7 @@ const WhatsAppButton: FC = () => {
         rel="noopener noreferrer"
         title={t('contactSection.title')}
         // className="fixed bottom-14 right-3 md:right-14 bg-green-500 hover:bg-green-600 rounded-full p-3 shadow-xl transition-all duration-300 ease-in-out z-50 mb-2"
-        className={`${
-          i18n.language === 'he'
-            ? 'fixed bottom-[150px] right-[0px] bg-green-500 hover:bg-green-600 rounded-full p-3 shadow-xl transition-all duration-300 ease-in-out z-50 mb-2'
-            : 'fixed bottom-[150px] left-[0px]  bg-green-500 hover:bg-green-600 rounded-full p-3 shadow-xl transition-all duration-300 ease-in-out z-50 mb-2 '
-        }`}
+        className="fixed bottom-[59px] left-[0px]  bg-green-500 hover:bg-green-600 rounded-full p-3 shadow-xl transition-all duration-300 ease-in-out z-50 mb-2 "
       >
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"

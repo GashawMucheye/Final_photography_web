@@ -7,6 +7,7 @@ import { MdEmail } from 'react-icons/md';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios';
 import { toast } from 'react-toastify';
+
 import { useTranslation } from 'react-i18next';
 import Accessibility from '@/components/Accessibility';
 import { useState } from 'react';
@@ -33,7 +34,8 @@ const Contact = () => {
       );
       console.log(response);
       toast.success(t('contactSection.messageSent'));
-      // toast.success('message sent successfully');
+      toast.success('message sent successfully');
+
       setName('');
       setEmail('');
       setMessage('');

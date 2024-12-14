@@ -10,6 +10,7 @@ import { FaArrowUp } from 'react-icons/fa';
 import { useEffect, useState } from 'react';
 import { useTheme } from '../context-Api/theme-provider';
 import Accessibility from '@/components/Accessibility';
+import Testimonials from '@/components/Testimonials';
 
 const Home = () => {
   const { t, i18n } = useTranslation();
@@ -40,7 +41,7 @@ const Home = () => {
     <section className="min-h-screen">
       <Accessibility />
       <div
-        className={`bg-[url('./images/image.png')] bg-center md:bg-left-top  bg-cover min-h-[500px] md:min-h-[800px] md:mb-18  flex gap-3 flex-col items-center justify-center mt-[.5em] object-contain`}
+        className={`bg-[url('./images/image.png')] bg-center md:bg-left-top bg-cover bg-fixed min-h-[500px] md:min-h-[800px] md:mb-18  flex gap-3 flex-col items-center justify-center mt-[.5em] object-contain`}
       >
         <div>
           <h1 className="text-2xl text-center"> {t('homePage.welcome')}</h1>
@@ -68,17 +69,11 @@ const Home = () => {
       <About />
       <Gallery />
       <Contact />
+      <Testimonials />
       <WhatsAppButton />
       <motion.a
         whileHover={{ scale: 1.2, color: 'steelblue', cursor: 'pointer' }}
-        // className={`fixed bottom-[70px] left-[10px] bg-blue-700 rounded-md animate-bounce  hover:opacity-15 ${
-        //   i18n.language === 'he' ? 'bg-red-500' : ''
-        // }`}
-        className={`${
-          i18n.language === 'he'
-            ? 'bg-blue-700 fixed bottom-[70px] right-[8px] rounded-md animate-bounce  '
-            : 'fixed bottom-[75px] left-[8px] bg-blue-700 rounded-md animate-bounce '
-        }`}
+        className="bg-blue-700 fixed bottom-[70px] right-[8px] rounded-md animate-bounce  "
       >
         {showArrow && (
           <div

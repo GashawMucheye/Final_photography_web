@@ -1,6 +1,8 @@
 import { FC } from 'react';
 import { useTranslation } from 'react-i18next';
-import { FaFacebook, FaInstagram } from 'react-icons/fa';
+// import { FaFacebook, FaInstagram } from 'react-icons/fa';
+import facebook from '/facebook.png';
+import instagram from '/instagram.png';
 const FooterComp: FC = () => {
   const { t } = useTranslation();
   return (
@@ -11,14 +13,16 @@ const FooterComp: FC = () => {
           target="_blank"
           className="text-blue-600 mx-3"
         >
-          <FaFacebook />
+          {/* <FaFacebook /> */}
+          <img src={facebook} alt="facebook" width={20} />
         </a>
         <a
           href="https://www.instagram.com/"
           target="_blank"
           className="text-red-400"
         >
-          <FaInstagram />
+          {/* <FaInstagram /> */}
+          <img src={instagram} alt="instagram" width={20} />
         </a>
       </div>
       <p>&copy;{t('copyRighter')}</p>

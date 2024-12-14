@@ -3,6 +3,7 @@ import { FC, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Skeleton } from '@/components/ui/skeleton';
 import Accessibility from '@/components/Accessibility';
+import img_about from '/img_about.jpg';
 const About: FC = () => {
   const { t } = useTranslation();
   const [isLoading, setIsLoading] = useState(true);
@@ -20,9 +21,9 @@ const About: FC = () => {
           <Skeleton className="w-full h-[300px] lg:h-[400px]" />
         ) : (
           <img
-            src="https://images.unsplash.com/photo-1495580621852-5de0cc907d2f?q=80&w=2039&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Replace with the photographer's image
-            // src="src/image.png" // Replace with the photographer's image
-            className="w-full"
+            // src="https://images.unsplash.com/photo-1495580621852-5de0cc907d2f?q=80&w=2039&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Replace with the photographer's image
+            src={img_about} // Replace with the photographer's image
+            className="w-full hover:brightness-dark"
             alt={t('aboutSection.aboutImageAlt')}
           />
         )}

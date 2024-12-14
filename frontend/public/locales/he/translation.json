@@ -1,6 +1,6 @@
 {
   "homePage": {
-    "description": "דוגמת לתרגום",
+    "description": "אני צלם מלא תשוקה שמחויב ללכוד את הרגעים היקרים ביותר שלכם. חקרו את עבודתי ובואו ניצור משהו יפה יחד.",
     "welcome": "ברוכים הבאים",
     "scroll": "גלול למעלה"
   },
@@ -49,6 +49,9 @@
     "fontDecrease": "הקטן גופן",
     "highContrast": "ניגודיות גבוהה",
     "toggleOptions": "שנה אפשרויות נגישות"
+  },
+  "testimonialSection": {
+    "testimonials": "המלצות"
   },
   "copyRighter": "כל הזכויות שמורות לאייל, 2024"
 }

@@ -23,9 +23,10 @@ routerMessage.post('/', async (req, res) => {
 
   try {
     const mailOptions = {
-      from: process.env.USER_EMAIL, // Replace with your email address
+      // from: process.env.USER_EMAIL, // Replace with your email address
+      from: email, // Replace with your email address
       // to: 'recipient_email@example.com', // Replace with the recipient's email address
-      to: email, // Replace with the recipient's email address
+      to: process.env.USER_EMAIL, // Replace with the recipient's email address
       subject: `New Message from Your Clients`,
       text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}:\nphone: ${phone}`,
     };

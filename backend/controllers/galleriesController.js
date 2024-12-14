@@ -46,7 +46,7 @@ const GetFindById = expressAsyncHandler(async (req, res) => {
 
 const creating = expressAsyncHandler(async (req, res) => {
   const { name, slug, category } = req.body;
-  const image = req.file ? req.file.path : '';
+  const image = req.file.path;
 
   const product = new Images({ name, slug, image, category });
   await product.save();
@@ -77,8 +77,6 @@ const updateProducts = expressAsyncHandler(async (req, res) => {
     product.slug = req.body.slug;
     product.price = req.body.price;
     product.image = req.body.image;
-    product.images = req.body.images;
-
     product.category = req.body.category;
     product.brand = req.body.brand;
     product.countInStock = req.body.countInStock;

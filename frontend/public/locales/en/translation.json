@@ -1,6 +1,6 @@
 {
   "homePage": {
-    "description": "This is an example of internationalization.",
+    "description": "I am a passionate photographer dedicated to capturing your most precious moments. Explore my work and let’s create something beautiful together.",
     "welcome": "Welcome to the app!",
     "scroll": "scroll to top"
   },
@@ -49,6 +49,9 @@
     "fontDecrease": "Decrease font size",
     "highContrast": "High Contrast",
     "toggleOptions": "Toggle accessibility options"
+  },
+  "testimonialSection": {
+    "testimonials": "testimonials"
   },
   "copyRighter": "All Rights Reserved to Eyal, 2024"
 }
