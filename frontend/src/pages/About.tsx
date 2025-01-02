@@ -14,38 +14,38 @@ const About: FC = () => {
   }, []);
   // max-w-5xl
   return (
-    <div className=" mx-auto rounded-md shadow-lg overflow-hidden lg:flex lg:items-center my-10 container min-h-screen">
+    <div className='mx-auto rounded-md shadow-lg overflow-hidden lg:flex lg:items-center my-10 container min-h-screen'>
       <Accessibility />
-      <div className="lg:w-1/2">
+      <div className='lg:w-1/2'>
         {isLoading ? (
-          <Skeleton className="w-full h-[300px] lg:h-[400px]" />
+          <Skeleton className='w-full h-[300px] lg:h-[400px]' />
         ) : (
           <img
             // src="https://images.unsplash.com/photo-1495580621852-5de0cc907d2f?q=80&w=2039&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Replace with the photographer's image
             src={img_about} // Replace with the photographer's image
-            className="w-full hover:brightness-dark"
+            className='w-full hover:brightness-dark'
             alt={t('aboutSection.aboutImageAlt')}
           />
         )}
       </div>
-      <div className="p-8 lg:w-1/2">
+      <div className='p-8 lg:w-1/2'>
         {isLoading ? (
-          <div className="space-y-4">
-            <Skeleton className="w-3/4 h-8" />
-            <Skeleton className="w-full h-6" />
-            <Skeleton className="w-full h-6" />
-            <Skeleton className="w-full h-6" />
+          <div className='space-y-4'>
+            <Skeleton className='w-3/4 h-8' />
+            <Skeleton className='w-full h-6' />
+            <Skeleton className='w-full h-6' />
+            <Skeleton className='w-full h-6' />
           </div>
         ) : (
           <>
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">
+            <h2 className='text-3xl font-bold text-gray-800 mb-4'>
               {t('aboutSection.aboutTitle')}
             </h2>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0 * 0.1 }}
-              className="text-gray-700 mb-4"
+              className='text-gray-700 mb-4'
             >
               {t('aboutSection.aboutDescription1')}
             </motion.p>
@@ -53,7 +53,7 @@ const About: FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0 * 0.1 }}
-              className="text-gray-700 mb-4"
+              className='text-gray-700 mb-4'
             >
               {t('aboutSection.aboutDescription2')}
             </motion.p>
@@ -61,7 +61,7 @@ const About: FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0 * 0.1 }}
-              className="text-gray-700 mb-4"
+              className='text-gray-700 mb-4'
             >
               {t('aboutSection.aboutDescription3')}
             </motion.p>

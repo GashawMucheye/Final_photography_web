@@ -12,6 +12,7 @@
     "About": "About-us",
     "About us": "About Us",
     "Gallery": "Gallery",
+    "services": "Services",
     "English": "English",
     "Amharic": "Amharic",
     "Hebrew": "Hebrew"
@@ -53,5 +54,45 @@
   "testimonialSection": {
     "testimonials": "testimonials"
   },
-  "copyRighter": "All Rights Reserved to Eyal, 2024"
+  "serviceSection": {
+    "title": "Our Services",
+    "subtitle": "Professional photography packages tailored to your needs",
+    "packages": {
+      "essential": {
+        "name": "Essential",
+        "hours": "4 Hours Coverage'",
+        " digital": "200+ Digital Photos",
+        "online": "Online Gallery",
+        "basic": "Basic Retouching"
+      },
+
+      "premium": {
+        "name": "Premium",
+        "features": [
+          "8 Hours Coverage",
+          "400+ Digital Photos",
+          "Online Gallery",
+          "Advanced Retouching",
+          "Second Photographer",
+          "Engagement Session"
+        ]
+      },
+      "luxury": {
+        "name": "Luxury",
+        "features": [
+          "Full Day Coverage",
+          "600+ Digital Photos",
+          "Online Gallery",
+          "Premium Retouching",
+          "Two Photographers",
+          "Engagement Session",
+          "Premium Photo Album",
+          "Canvas Wall Art"
+        ]
+      }
+    }
+  },
+  "footer": {
+    "copyRighter": "All Rights Reserved to Eyal, 2024"
+  }
 }

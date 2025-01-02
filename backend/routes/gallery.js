@@ -4,6 +4,15 @@ const { v2: cloudinary } = require('cloudinary');
 const { CloudinaryStorage } = require('multer-storage-cloudinary');
 const routerGalleries = express.Router();
 
+const {
+  getProducts,
+  getFindBySlug,
+  GetFindById,
+  deleteProducts,
+  updateProducts,
+  creating,
+} = require('../controllers/galleriesController');
+
 // Cloudinary Configuration
 // Cloudinary Configuration
 cloudinary.config({
@@ -15,22 +24,14 @@ cloudinary.config({
 const storage = new CloudinaryStorage({
   cloudinary: cloudinary,
   params: {
-    folder: 'uploads', // Folder name in Cloudinary
-    allowed_formats: ['jpg', 'png', 'jpeg'],
+    folder: 'uploads_galleries', // Folder in Cloudinary where files will be stored
+    format: async (req, file) => 'jpg', // Convert all files to JPG format
+    public_id: (req, file) => `${Date.now()}-${file.originalname}`, // Unique file name
   },
 });
 
 const upload = multer({ storage });
 // Set up multer for file uploads
-
-const {
-  getProducts,
-  getFindBySlug,
-  GetFindById,
-  deleteProducts,
-  updateProducts,
-  creating,
-} = require('../controllers/galleriesController');
 
 // CREATE a new gallery item
 routerGalleries.post('/', upload.single('image'), creating);

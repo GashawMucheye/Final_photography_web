@@ -29,6 +29,11 @@ const ListMenu = ({ className }: { className: string }) => {
       endPoint: '/gallery',
       linkName: t('navigation.Gallery'), // Translate "Gallery"
     },
+    {
+      id: 5,
+      endPoint: '/services',
+      linkName: t('navigation.services'), // Translate "services"
+    },
   ];
 
   return (

@@ -11,6 +11,8 @@ import { useEffect, useState } from 'react';
 import { useTheme } from '../context-Api/theme-provider';
 import Accessibility from '@/components/Accessibility';
 import Testimonials from '@/components/Testimonials';
+import UploadTestimonial from '@/components/UploadTestimonial';
+import Services from './Services';
 
 const Home = () => {
   const { t, i18n } = useTranslation();
@@ -38,18 +40,18 @@ const Home = () => {
   }, []);
 
   return (
-    <section className="min-h-screen">
+    <section className='min-h-screen'>
       <Accessibility />
       <div
         className={`bg-[url('./images/image.png')] bg-center md:bg-left-top bg-cover bg-fixed min-h-[500px] md:min-h-[800px] md:mb-18  flex gap-3 flex-col items-center justify-center mt-[.5em] object-contain`}
       >
         <div>
-          <h1 className="text-2xl text-center"> {t('homePage.welcome')}</h1>
-          <p className="text-center">{t('homePage.description')}</p>
+          <h1 className='text-2xl text-center'> {t('homePage.welcome')}</h1>
+          <p className='text-center'>{t('homePage.description')}</p>
         </div>
-        <div className="flex flex-col md:flex-row">
+        <div className='flex flex-col md:flex-row'>
           <Button
-            className="btn btn-outline btn-primary my-3 md:mx-3 hover:bg-transparent hover:text-white hover:border border-blue-600 animate-bounce hover:animate-none"
+            className='btn btn-outline btn-primary my-3 md:mx-3 hover:bg-transparent hover:text-white hover:border border-blue-600 animate-bounce hover:animate-none'
             onClick={() => {
               navigate('/about');
             }}
@@ -57,7 +59,7 @@ const Home = () => {
             {t('navigation.About')}
           </Button>
           <Button
-            className="btn btn-outline btn-primary my-3 md:mx-3 hover:bg-transparent hover:text-white hover:border border-blue-600 animate-bounce  hover:animate-none"
+            className='btn btn-outline btn-primary my-3 md:mx-3 hover:bg-transparent hover:text-white hover:border border-blue-600 animate-bounce  hover:animate-none'
             onClick={() => {
               navigate('/contact');
             }}
@@ -67,13 +69,22 @@ const Home = () => {
         </div>
       </div>
       <About />
+      <hr />
       <Gallery />
-      <Contact />
+      <hr />
       <Testimonials />
+      <hr />
+      <Services />
+      <hr />
+      <Contact />
+
+      <hr />
+      <UploadTestimonial />
+      <hr />
       <WhatsAppButton />
       <motion.a
         whileHover={{ scale: 1.2, color: 'steelblue', cursor: 'pointer' }}
-        className="bg-blue-700 fixed bottom-[70px] right-[8px] rounded-md animate-bounce  "
+        className='bg-blue-700 fixed bottom-[70px] right-[8px] rounded-md animate-bounce  '
       >
         {showArrow && (
           <div

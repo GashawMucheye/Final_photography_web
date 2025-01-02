@@ -84,7 +84,7 @@ const Testimonials: React.FC = () => {
               <div className="bg-green-500 p-4 text-center rounded-md">
                 <figure className="mb-4">
                   <img
-                    src={`http://localhost:3000/${item.imageUrl}`}
+                    src={item.imageUrl}
                     className="w-16 h-16 mx-auto rounded-full object-cover"
                     alt={item.name}
                   />
@@ -92,7 +92,7 @@ const Testimonials: React.FC = () => {
                     {item.name}
                   </figcaption>
                 </figure>
-                <p className="text-center mb-4 text-black">{item.content}</p>
+                <q className="text-center mb-4 text-black">{item.content}</q>
                 <div className="flex justify-center text-black">
                   <StarRatings
                     rating={item.rating}

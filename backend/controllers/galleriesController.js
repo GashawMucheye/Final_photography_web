@@ -45,10 +45,10 @@ const GetFindById = expressAsyncHandler(async (req, res) => {
 //! @route post/api/product
 
 const creating = expressAsyncHandler(async (req, res) => {
-  const { name, slug, category } = req.body;
-  const image = req.file.path;
+  const { name, slug, category, description } = req.body;
+  const image = req.file ? req.file.path : '';
 
-  const product = new Images({ name, slug, image, category });
+  const product = new Images({ name, slug, image, category, description });
   await product.save();
   res.status(201).json(product);
 });
@@ -57,12 +57,13 @@ const creating = expressAsyncHandler(async (req, res) => {
 //! @route delete/api/product
 const deleteProducts = expressAsyncHandler(async (req, res) => {
   const product = await Images.findById(req.params.id);
-  if (product) {
-    await product.deleteOne();
-    res.send({ message: 'Images Deleted' });
-  } else {
-    res.status(404).send({ message: 'Images Not Found' });
+  if (!product) {
+    res.status(404);
+    throw new Error('Testimonial not found');
   }
+  // Delete the gallery_product
+  await product.deleteOne();
+  res.send({ message: 'Images Deleted' });
 });
 
 //! @desc  update products
@@ -70,22 +71,23 @@ const deleteProducts = expressAsyncHandler(async (req, res) => {
 //!@access private
 
 const updateProducts = expressAsyncHandler(async (req, res) => {
-  const productId = req.params.id;
-  const product = await Images.findById(productId);
-  if (product) {
-    product.name = req.body.name;
-    product.slug = req.body.slug;
-    product.price = req.body.price;
-    product.image = req.body.image;
-    product.category = req.body.category;
-    product.brand = req.body.brand;
-    product.countInStock = req.body.countInStock;
-    product.description = req.body.description;
-    await product.save();
-    res.send({ message: 'Images Updated' });
-  } else {
-    res.status(404).send({ message: 'Images Not Found' });
+  const { id } = req.params;
+  const { name, slug, category, description } = req.body;
+  const image = req.file ? req.file.path : '';
+  // Find the gallery_item by id
+  const product = await Images.findById(id);
+  if (!product) {
+    res.status(404);
+    throw new Error('Product not found');
   }
+  // Update the gallery_item fields
+  product.name = name || product.name;
+  product.slug = slug || product.slug;
+  product.image = image || product.image;
+  product.category = category || product.category;
+  product.description = description || product.description;
+  await product.save();
+  res.send({ message: 'Images Updated' });
 });
 
 module.exports = {
