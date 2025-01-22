@@ -2,7 +2,8 @@ import { FC } from 'react';
 import ListMenu from './ListMenu';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { Button } from './ui/button';
-import eyal from '/eyal_logo.jpg';
+// import eyal from '/eyal_logo.jpg';
+import eyal from '/new_eyal_logo.jpg';
 import SelectLang from './SelectLang';
 import ModeToggle from './mode-toggle';
 import { useMyContext } from '@/context-Api/toggle-menu';
@@ -21,8 +22,8 @@ const Navbar: FC = () => {
         <img
           src={eyal}
           alt='eyal'
-          width={40}
-          // className="cursor-pointer mr-auto md:mr-0 text-2xl font-bold hover:scale-180 rounded-full hover:bg-red-600"
+          width={80}
+          className='cursor-pointer mr-auto md:mr-0 text-2xl font-bold hover:scale-180 rounded-full hover:bg-red-600'
         />
       </Link>
 

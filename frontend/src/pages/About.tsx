@@ -23,7 +23,7 @@ const About: FC = () => {
           <img
             // src="https://images.unsplash.com/photo-1495580621852-5de0cc907d2f?q=80&w=2039&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Replace with the photographer's image
             src={img_about} // Replace with the photographer's image
-            className='w-full hover:brightness-dark'
+            className='w-full hover:brightness-dark rounded-md'
             alt={t('aboutSection.aboutImageAlt')}
           />
         )}
@@ -38,14 +38,15 @@ const About: FC = () => {
           </div>
         ) : (
           <>
-            <h2 className='text-3xl font-bold text-gray-800 mb-4'>
+            <h2 className='text-3xl font-bold mb-4'>
               {t('aboutSection.aboutTitle')}
             </h2>
+            <div className='bg-blue-800 w-10 h-[2px] mb-10 font-bold text-center '></div>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0 * 0.1 }}
-              className='text-gray-700 mb-4'
+              className='mb-4'
             >
               {t('aboutSection.aboutDescription1')}
             </motion.p>
@@ -53,7 +54,7 @@ const About: FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0 * 0.1 }}
-              className='text-gray-700 mb-4'
+              className='mb-4'
             >
               {t('aboutSection.aboutDescription2')}
             </motion.p>
@@ -61,7 +62,7 @@ const About: FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0 * 0.1 }}
-              className='text-gray-700 mb-4'
+              className='mb-4'
             >
               {t('aboutSection.aboutDescription3')}
             </motion.p>

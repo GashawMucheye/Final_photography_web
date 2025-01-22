@@ -1,22 +1,21 @@
-import { useTranslation } from 'react-i18next';
-import { Button } from '../components/ui/button';
 import About from './About';
 import Gallery from './Gallery';
 import Contact from './Contact';
-import { useNavigate } from 'react-router-dom';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import { motion } from 'framer-motion';
-import { FaArrowUp } from 'react-icons/fa';
+// import { FaArrowUp } from 'react-icons/fa';
+import { IoIosArrowDropup } from 'react-icons/io';
+
 import { useEffect, useState } from 'react';
 import { useTheme } from '../context-Api/theme-provider';
 import Accessibility from '@/components/Accessibility';
 import Testimonials from '@/components/Testimonials';
-import UploadTestimonial from '@/components/UploadTestimonial';
+// import UploadTestimonial from '@/components/UploadTestimonial';
 import Services from './Services';
+import HeroSection from '@/components/HeroSection';
+import { useTranslation } from 'react-i18next';
 
 const Home = () => {
-  const { t, i18n } = useTranslation();
-  const navigate = useNavigate();
   const [scrollY, setScrollY] = useState<number>(0);
   const [showArrow, setShowArrow] = useState<boolean>(false);
   const { theme } = useTheme();
@@ -37,37 +36,13 @@ const Home = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [scrollY]);
+  const { t } = useTranslation();
 
   return (
     <section className='min-h-screen'>
       <Accessibility />
-      <div
-        className={`bg-[url('./images/image.png')] bg-center md:bg-left-top bg-cover bg-fixed min-h-[500px] md:min-h-[800px] md:mb-18  flex gap-3 flex-col items-center justify-center mt-[.5em] object-contain`}
-      >
-        <div>
-          <h1 className='text-2xl text-center'> {t('homePage.welcome')}</h1>
-          <p className='text-center'>{t('homePage.description')}</p>
-        </div>
-        <div className='flex flex-col md:flex-row'>
-          <Button
-            className='btn btn-outline btn-primary my-3 md:mx-3 hover:bg-transparent hover:text-white hover:border border-blue-600 animate-bounce hover:animate-none'
-            onClick={() => {
-              navigate('/about');
-            }}
-          >
-            {t('navigation.About')}
-          </Button>
-          <Button
-            className='btn btn-outline btn-primary my-3 md:mx-3 hover:bg-transparent hover:text-white hover:border border-blue-600 animate-bounce  hover:animate-none'
-            onClick={() => {
-              navigate('/contact');
-            }}
-          >
-            {t('navigation.Contact us')}
-          </Button>
-        </div>
-      </div>
+      <HeroSection />
       <About />
       <hr />
       <Gallery />
@@ -77,14 +52,14 @@ const Home = () => {
       <Services />
       <hr />
       <Contact />
-
+      {/* 
       <hr />
-      <UploadTestimonial />
-      <hr />
+      <UploadTestimonial /> */}
+      {/* <hr /> */}
       <WhatsAppButton />
       <motion.a
         whileHover={{ scale: 1.2, color: 'steelblue', cursor: 'pointer' }}
-        className='bg-blue-700 fixed bottom-[70px] right-[8px] rounded-md animate-bounce  '
+        className=' bg-blue-600 fixed bottom-[70px] right-[8px] rounded-md animate-bounce  '
       >
         {showArrow && (
           <div
@@ -92,8 +67,10 @@ const Home = () => {
             className={`${
               theme === 'dark' ? 'text-white p-3' : 'text-black p-3'
             } hover:text-white`}
+            title={t('homePage.scroll')}
           >
-            <FaArrowUp size={24} />
+            {/* <FaArrowUp size={24} /> */}
+            <IoIosArrowDropup size={30} />
           </div>
         )}
       </motion.a>

@@ -1,8 +1,11 @@
 {
   "homePage": {
     "description": "I am a passionate photographer dedicated to capturing your most precious moments. Explore my work and let’s create something beautiful together.",
-    "welcome": "Welcome to the app!",
-    "scroll": "scroll to top"
+    "welcome": "Welcome to the app",
+    "scroll": "scroll to top",
+    "title": "Capturing Life's Beautiful Moments",
+    "subtitle": "Professional photography for your special occasions",
+    "cta": "Book Now"
   },
   "navigation": {
     "language": "language",
@@ -52,43 +55,41 @@
     "toggleOptions": "Toggle accessibility options"
   },
   "testimonialSection": {
-    "testimonials": "testimonials"
+    "testimonials": "testimonials",
+    "quote": " What Our Customers Say"
   },
+
   "serviceSection": {
     "title": "Our Services",
-    "subtitle": "Professional photography packages tailored to your needs",
+    "subtitle": "Choose the perfect package for your special day.",
+    "bookNow": "Book Now",
     "packages": {
       "essential": {
         "name": "Essential",
-        "hours": "4 Hours Coverage'",
-        " digital": "200+ Digital Photos",
+        "hours": "4 Hours Coverage",
+        "digital": "200+ Digital Photos",
         "online": "Online Gallery",
         "basic": "Basic Retouching"
       },
-
       "premium": {
         "name": "Premium",
-        "features": [
-          "8 Hours Coverage",
-          "400+ Digital Photos",
-          "Online Gallery",
-          "Advanced Retouching",
-          "Second Photographer",
-          "Engagement Session"
-        ]
+        "hours": "8 Hours Coverage",
+        "digital": "400+ Digital Photos",
+        "online": "Online Gallery",
+        "advanced": "Advanced Retouching",
+        "secondPhotographer": "Second Photographer",
+        "engagement": "Engagement Session"
       },
       "luxury": {
         "name": "Luxury",
-        "features": [
-          "Full Day Coverage",
-          "600+ Digital Photos",
-          "Online Gallery",
-          "Premium Retouching",
-          "Two Photographers",
-          "Engagement Session",
-          "Premium Photo Album",
-          "Canvas Wall Art"
-        ]
+        "fullDay": "Full Day Coverage",
+        "digital": "600+ Digital Photos",
+        "online": "Online Gallery",
+        "premiumRetouching": "Premium Retouching",
+        "twoPhotographers": "Two Photographers",
+        "engagement": "Engagement Session",
+        "album": "Premium Photo Album",
+        "canvas": "Canvas Wall Art"
       }
     }
   },
